@@ -20,15 +20,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz App</title>
-  <link rel="stylesheet" href="questions.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div id="quiz-container">
+  <div id="wrapper">
     <h1>Quiz App</h1>
+    <p>
     <div id="question"></div>
     <div id="options"></div>
-    <button id="next-button">Next Question</button>
-    <div id="score">Score: 0</div>
+    <div id="navigation-buttons">
+      <button id="prev-button">Previous</button><button id="next-button">Next</button>
+    </div>
+  </p>
   </div>
   <script src="questions.js"></script>
 </body>

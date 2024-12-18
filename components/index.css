@@ -1,44 +1,60 @@
-/* .wrapper {
-    width: 420px;
-    background: transparent;
-    border-width: 20px;
-    border-style: double;
-    border-image: linear-gradient(to right, #c982dc , rgb(63, 139, 136));
-    border-image-slice: 1;
-    padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enable flexbox on body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-image: url("bg.jpg");
+  background-size: cover; /* Make background image cover entire page */
+  background-position: center; /* Center the background image */
 }
 
-body {
-    background-image: url("bg.jpg");
-  } */
+#wrapper {
+  background: transparent;
+  border-width: 20px;
+  border-style: double;
+  border-image: linear-gradient(to right, #c982dc, rgb(63, 139, 136));
+  border-image-slice: 1;
+  padding: 20px;
+  width: 420px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #quiz-container {
-    margin-top: 50px;
-  }
-  
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  .option-button {
-    display: block;
-    margin: 10px auto;
-    width: 200px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #score {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  
+h1 {
+  color: white;
+}
+
+#question {
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.option-button {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  font-size: 16px;
+}
+
+#navigation-buttons {
+  margin-top: 20px;
+}
+
+#navigation-buttons button {
+  display: inline-block;
+  margin: 0 10px; /* Buttons next to each other */
+}
