@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
     width: 420px;
     background: transparent;
     border-width: 20px;
@@ -10,4 +10,35 @@
 
 body {
     background-image: url("bg.jpg");
+  } */
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
+  
+  #quiz-container {
+    margin-top: 50px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .option-button {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #score {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
