@@ -1,0 +1,13 @@
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border-width: 20px;
+    border-style: double;
+    border-image: linear-gradient(to right, #c982dc , rgb(63, 139, 136));
+    border-image-slice: 1;
+    padding: 20px;
+}
+
+body {
+    background-image: url("bg.jpg");
+  }
