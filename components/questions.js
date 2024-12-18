@@ -54,16 +54,17 @@ function displayQuestion() {
       });
       optionsContainer.appendChild(button);
     });
-    
+
     scoreLabel.style.display = "none";
     previousButton.style.display = currentIndex > 0 ? "inline-block" : "none";
     nextButton.style.display = "inline-block";
     restartButton.style.display = "none";
   } else {
-    questionElement.textContent = "Quiz Complete!";
+    const fullName = new URLSearchParams(window.location.search).get("fullName") || "User";
+    questionElement.textContent = `Well done, ${fullName}!`;
     optionsContainer.innerHTML = "";
     scoreLabel.style.display = "block";
-    scoreLabel.textContent = `Score: ${score}`;
+    scoreLabel.textContent = `Your score: ${score}`;
     nextButton.style.display = "none";
     previousButton.style.display = "none";
     restartButton.style.display = "inline-block";

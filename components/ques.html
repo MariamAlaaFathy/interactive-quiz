@@ -4,17 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quiz App</title>
-        <link rel="stylesheet" href="questions.css">
+        <link rel="stylesheet" href="ques.css">
     </head>
     <body>
         <div id="quiz-container">
             <h1>Quiz App</h1>
             <div id="question"></div>
             <div id="options"></div>
-            <button id="previous-button"
-                style="display: none;">Previous</button>
-            <button id="next-button">Next</button>
-            <button id="restart-button" style="display: none;">Restart</button>
+            <div>
+                <button id="previous-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+            <button id="restart-button"">Restart</button>
+            <a href="index.html">
+                <button>Home</button>
+            </a>
             <div id="score">Score: 0</div>
         </div>
         <script src="questions.js"></script>

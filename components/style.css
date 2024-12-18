@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #c982dc, rgb(63, 139, 136));
+  background-image: url("bg.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,11 @@ body {
 }
 
 .wrapper {
+  background: transparent;
+  border-width: 20px;
+  border-style: double;
+  border-image: linear-gradient(to right, #c982dc, rgb(63, 139, 136));
+  border-image-slice: 1;
   width: 100%;
   max-width: 400px;
   background: rgba(0, 0, 0, 0.7);
@@ -26,6 +31,9 @@ h1 {
 
 .input-box {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-box input {
