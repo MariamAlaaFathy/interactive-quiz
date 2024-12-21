@@ -60,9 +60,29 @@ function displayQuestion() {
     nextButton.style.display = "inline-block";
     restartButton.style.display = "none";
   } else {
-    const fullName = new URLSearchParams(window.location.search).get("fullName") || "User";
-    questionElement.textContent = `Well done, ${fullName}!`;
+    const name = new URLSearchParams(window.location.search).get("name") || "User";
+    if(score >= 5) {
+      questionElement.textContent = `Well done, ${name}! :D`;
+    }
+    else {
+      questionElement.textContent = `Better luck next time, ${name} :(`;
+    }
     optionsContainer.innerHTML = "";
+
+    const correctAnswersContainer = document.createElement('div');
+    correctAnswersContainer.id = 'correct-answers';
+    correctAnswersContainer.style.marginTop = "20px";
+    correctAnswersContainer.style.textAlign = "left";
+    correctAnswersContainer.innerHTML = "<h3>Correct Answers:</h3>";
+
+    quizQuestions.forEach((q, index) => {
+      const answerElement = document.createElement('p');
+      answerElement.textContent = `${index + 1}. ${q.question} - ${q.answer}`;
+      correctAnswersContainer.appendChild(answerElement);
+    });
+
+    optionsContainer.appendChild(correctAnswersContainer);
+
     scoreLabel.style.display = "block";
     scoreLabel.textContent = `Your score: ${score}`;
     nextButton.style.display = "none";
